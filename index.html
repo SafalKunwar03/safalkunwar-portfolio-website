@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safal Kunwar</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Official portfolio website of Safal Kunwar — an IT enthusiast, student at Informatics College Pokhara, and aspiring developer." />
+  <meta name="keywords" content="Safal Kunwar, portfolio, IT student, developer, Pokhara, Nepal" />
+  <meta name="author" content="Safal Kunwar" />
+
+  <!-- Favicon (emoji-based SVG instead of a .ico file) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+
+  <!-- Google Fonts: Inter (body text) & Fira Code (monospace for tags/dates) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Boxicons: Icon library used for nav icons, buttons, etc. -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+
+  <!-- PRELOADER — Loading spinner shown until the page fully loads -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- HEADER — Sticky header with site name + navigation -->
+  <header class="header" id="header">
+    <div class="header-top">
+      <a href="#" class="site-name">Safal Kunwar</a>
+    </div>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <!-- Nav Links — each scrolls to a section; "active" highlights current section -->
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link active"><i class='bx bxs-home'></i> Home</a>
+          <a href="#about" class="nav-link"><i class='bx bxs-user'></i> About</a>
+          <a href="#resume" class="nav-link"><i class='bx bxs-file'></i> Resume</a>
+          <a href="#projects" class="nav-link"><i class='bx bxs-collection'></i> Projects</a>
+          <a href="#certifications" class="nav-link"><i class='bx bxs-certification'></i> Certifications</a>
+          <a href="#contact" class="nav-link"><i class='bx bxs-envelope'></i> Contact</a>
+          <!-- Socials Dropdown — toggled by JavaScript -->
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" id="socialsToggle"><i class='bx bx-globe'></i> Socials <i
+                class='bx bx-chevron-down dropdown-arrow'></i></button>
+            <div class="dropdown-menu" id="socialsMenu">
+              <a href="https://github.com/SafalKunwar03" target="_blank" rel="noopener"><i class='bx bxl-github'></i>
+                GitHub</a>
+              <a href="https://linkedin.com/in/safalkunwar" target="_blank" rel="noopener"><i
+                  class='bx bxl-linkedin'></i>
+                LinkedIn</a>
+              <a href="https://instagram.com/safal_kunwar" target="_blank" rel="noopener"><i
+                  class='bx bxl-instagram'></i>
+                Instagram</a>
+            </div>
+          </div>
+        </div>
+        <!-- Hamburger — visible only on mobile, toggles the nav menu -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO — Intro section with profile photo, name, tagline, and CTA -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shape"></div> <!-- Decorative curved shape at the bottom -->
+    <div class="hero-container">
+      <div class="hero-image-wrapper reveal"> <!-- "reveal" = animated on scroll by JS -->
+        <img src="assets/images/Profile 1.png" alt="Safal Kunwar" class="hero-image" />
+      </div>
+      <h1 class="hero-name reveal"><span class="name-bar"></span> Safal Kunwar</h1>
+      <p class="hero-tagline reveal" id="typedTagline">"Eager to learn, ready to innovate."</p>
+      <a href="https://linkedin.com/in/safalkunwar" target="_blank" rel="noopener" class="btn-primary reveal">
+        Let's get connected on LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT — Bio text + Technical Skills grid -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-heading reveal"><span class="heading-bar"></span> About Me</h2>
+      <div class="about-content reveal">
+        <p>
+          I am an <strong>IT enthusiast</strong> eager to learn technological advancements and apply innovative
+          solutions to real-world problems. Currently, I am a <strong>2nd year student</strong> pursuing a Bachelor's
+          degree in <strong>Information Technology</strong> at <strong>Informatics College Pokhara</strong> located in
+          Pokhara, Nepal which is affiliated with <strong>London Metropolitan University</strong>.
+        </p>
+        <p>
+          I have gained knowledge of programming languages including HTML, CSS, JavaScript, Java, Python and C++.
+          I'm familiar with network operating systems like Windows and Linux and have basic knowledge of database
+          management. I enjoy building real-world applications and continuously exploring new technologies.
+        </p>
+      </div>
+
+      <h3 class="sub-heading reveal"><span class="heading-bar"></span> Technical Skills</h3>
+      <!-- Skills Grid — responsive cards, each with a category title and skill tags -->
+      <div class="skills-grid reveal">
+        <div class="skill-category">
+          <h4><i class='bx bx-code-alt'></i> Languages</h4>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>Python</span><span>C++</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class='bx bx-wrench'></i> Tools & IDEs</h4>
+          <div class="skill-tags">
+            <span>VS Code</span><span>Eclipse</span><span>IntelliJ IDEA</span><span>BlueJ</span><span>Anaconda</span>
+            <span>Jupyter Notebook</span><span>Arduino IDE</span><span>Packet Tracer</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class='bx bx-server'></i> Technologies</h4>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Git</span><span>GitHub</span><span>XAMPP</span><span>Oracle
+              DB</span><span>VirtualBox</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class='bx bx-terminal'></i> OS & Systems</h4>
+          <div class="skill-tags">
+            <span>Windows</span><span>Linux</span><span>Kali
+              Linux</span><span>Ubuntu</span><span>Ventoy</span><span>Rufus</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class='bx bx-shape-polygon'></i> Design & Docs</h4>
+          <div class="skill-tags">
+            <span>UML Diagrams</span><span>ERD</span><span>MS Word</span><span>MS Excel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME — Two-column grid: Education (left) + Experience (right), then Soft Skills -->
+  <section class="resume" id="resume">
+    <div class="container">
+      <h2 class="section-heading reveal"><span class="heading-bar"></span> Resume</h2>
+
+      <div class="resume-grid">
+        <!-- Education Column -->
+        <div class="resume-column reveal">
+          <h3 class="resume-col-title"><i class='bx bxs-graduation'></i> Education</h3>
+          <div class="resume-item"> <!-- Each item has a timeline dot via CSS ::before -->
+            <span class="resume-date">2024 — Present</span>
+            <h4>Bachelor's in Information Technology</h4>
+            <p class="resume-place">Informatics College Pokhara (London Metropolitan University)</p>
+            <p>2nd year student, gaining knowledge in programming, networking, databases and software engineering.</p>
+          </div>
+          <div class="resume-item">
+            <span class="resume-date">Completed 2024</span>
+            <h4>High School (+2)</h4>
+            <p class="resume-place">Prativa Secondary School</p>
+            <p>Completed higher secondary education before pursuing IT degree.</p>
+          </div>
+        </div>
+
+        <!-- Experience Column -->
+        <div class="resume-column reveal">
+          <h3 class="resume-col-title"><i class='bx bxs-briefcase'></i> Training & Experience</h3>
+          <div class="resume-item">
+            <span class="resume-date">May 19 - Jun 4, 2024</span>
+            <h4>Basic Computer Skills & Personality Development Training</h4>
+            <p class="resume-place">mySecondTeacher — Informatics College Pokhara</p>
+            <p>Participated in comprehensive training covering computer literacy, communication skills and personality
+              development.</p>
+          </div>
+          <div class="resume-item">
+            <span class="resume-date">Apr 27 - Jul 30, 2022</span>
+            <h4>Diploma in Computer Course</h4>
+            <p class="resume-place">Prominent Education Foundation</p>
+            <p>Completed 3-month diploma course with 'A' grade, gaining proficiency in computer fundamentals and
+              applications.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="soft-skills reveal">
+        <h3 class="resume-col-title"><i class='bx bxs-star'></i> Soft Skills</h3>
+        <div class="skill-tags">
+          <span>Communication</span><span>Technical Support</span><span>Problem
+            Solving</span><span>Teamwork</span><span>Quick Learner</span>
+        </div>
+      </div>
+
+      <div class="resume-download reveal">
+        <a href="Safal Kunwar - CV.pdf" download class="btn-primary"><i class='bx bx-download'></i> Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS — Card grid; each card has an image, description, and tech tags -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-heading reveal"><span class="heading-bar"></span> Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="assets/images/project-ecommerce.png" alt="E-Commerce Watch Store" loading="lazy" />
+            <!-- loading="lazy" delays loading until near viewport -->
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Watch Store</h3>
+            <p>Built an online store for selling watches using HTML, CSS and JavaScript. Features include product
+              browsing, cart management and online payment integration.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="assets/images/project-gym.png" alt="Gym Management System" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Gym Management System</h3>
+            <p>Developed a GUI-based application in Java to manage gym members, track memberships, and offer
+              premium/regular membership tiers with discount features.</p>
+            <div class="project-tech">
+              <span>Java</span><span>Swing GUI</span><span>OOP</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="assets/images/project-database.png" alt="SajiloYatra Database" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>SajiloYatra Travel Database</h3>
+            <p>Designed a complete database management system for a travel company using Oracle DB. Supports real-time
+              seat availability, multiple booking classes (Regular, Premium, VIP) and flexible payment handling.</p>
+            <div class="project-tech">
+              <span>Oracle DB</span><span>SQL</span><span>ERD</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="assets/images/project-restaurant.png" alt="Restaurant Management System" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Gokyo Bistro — Restaurant System</h3>
+            <p>Created an online restaurant management system for Gokyo Bistro to manage table arrangements, order
+              tracking and home delivery operations.</p>
+            <div class="project-tech">
+              <span>Web App</span><span>JavaScript</span><span>Database</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="assets/images/project-skincare.png" alt="Skin Care Sale System" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Skin Care Product Sale System</h3>
+            <p>Built a Python console application that displays products, tracks sales and stock levels, and generates
+              invoices for skincare product management.</p>
+            <div class="project-tech">
+              <span>Python</span><span>CLI</span><span>Inventory</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="assets/images/project-arduino.png" alt="Obstacle Avoiding Car" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Obstacle Avoiding Car</h3>
+            <p>Built an autonomous obstacle-avoiding robot car using Arduino, ultrasonic sensor and motor driver.
+              The car detects obstacles and navigates around them in real time.</p>
+            <div class="project-tech">
+              <span>Arduino</span><span>C++</span><span>Hardware</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS — Cards with icon, title, issuer, date, and description -->
+  <section class="certifications" id="certifications">
+    <div class="container">
+      <h2 class="section-heading reveal"><span class="heading-bar"></span> Certifications</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class='bx bxl-linkedin-square'></i></div>
+          <h3>Java Object-Oriented Programming</h3>
+          <p class="cert-issuer">LinkedIn Learning</p>
+          <p class="cert-date"><i class='bx bx-calendar'></i> Received: May 01, 2025</p>
+          <p>Gained comprehensive knowledge of Java and Object-Oriented Programming concepts including classes,
+            inheritance, polymorphism and encapsulation.</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class='bx bxs-graduation'></i></div>
+          <h3>Diploma in Computer Course</h3>
+          <p class="cert-issuer">Prominent Education Foundation</p>
+          <p class="cert-date"><i class='bx bx-calendar'></i> Apr 27 - Jul 30, 2022</p>
+          <p>Completed with 'A' grade. Covered computer fundamentals, office applications, internet usage and basic
+            computing concepts.</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class='bx bxs-user-voice'></i></div>
+          <h3>Basic Computer Skills & Personality Development</h3>
+          <p class="cert-issuer">mySecondTeacher — Informatics College</p>
+          <p class="cert-date"><i class='bx bx-calendar'></i> May 19 - Jun 4, 2024</p>
+          <p>Training focused on essential computer skills, communication, technical support and professional
+            personality development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT — Phone number and email display -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-heading reveal"><span class="heading-bar"></span> Get In Touch</h2>
+      <div class="contact-content">
+        <p class="contact-text reveal">
+          I'm currently looking for new opportunities and my inbox is always open.
+          Whether you have a question, want to collaborate on a project, or just want to say hi — feel free to reach
+          out!
+        </p>
+
+        <div class="contact-text reveal">
+          <div class="contact-item">
+            <i class='bx bxs-envelope'></i>
+            <span>safalkunwar2005@gmail.com</span>
+            </a>
+            <div class="contact-item">
+              <i class='bx bxs-phone'></i>
+              <span>+977-9764617678</span>
+              </a>
+              <div class="contact-item">
+                <i class='bx bxs-map'></i>
+                <span>Pokhara, Nepal</span>
+                </a>
+              </div>
+            </div>
+          </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Safal Kunwar</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP — Floating button, shown by JS when scrolled past 500px -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class='bx bx-chevron-up'></i>
+  </button>
+
+  <!-- JS loaded at bottom so HTML elements exist before the script runs -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
